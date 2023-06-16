@@ -38,17 +38,52 @@ a {
 	background: white;
 	border-radius: 50%;
 	cursor: pointer;
+	transition: all 0.5s;
 
 }
 
 .burger__item {
 	display: block;
-	width: 18px;
+	width: 17px;
 	height: 2px;
 	background: #000;
+	transition: all 2s;
+}
+
+.burger__item:first-of-type {
+	transform-origin: 0 0;
 }
 
 .burger__item:nth-of-type(2) {
-	margin: 3px 0;
-	
+	margin: 5px 0;
+	transition-delay: 0.3s;
+}
+
+.burger__item:last-of-type {
+	transition-delay: 0.6s;
+	transform-origin: 0 0;
+}
+
+.burger:hover {
+	background: #000;
+}
+
+.burger:hover .burger__item {
+	background: white;
+}
+
+.burger:active {
+	background: green;
+}
+
+.burger:active .burger__item:first-of-type {
+	transform: rotate(45deg) translateX(2px);
+}
+
+.burger:active .burger__item:nth-of-type(2) {
+	opacity: 0;
+}
+
+.burger:active .burger__item:last-of-type {
+	transform: rotate(-45deg) translateX(2px);
 }

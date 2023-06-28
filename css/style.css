@@ -227,7 +227,7 @@ li {
 body {
     position: relative;
     margin: 0 auto;
-    padding-bottom: 1000px;
+    /* padding-bottom: 1000px; */
     width: 1440px;
     font-family: 'Poppins', sans-serif;
     background: white;
@@ -238,6 +238,7 @@ body:after {
     position: absolute;
     top: 0;
     left: 50%;
+    display: none;
     width: 1px;
     height: 100vh;
     background: green;
@@ -563,6 +564,7 @@ a {
 .footer-center__contacts {
     padding-left: 105px;
 }
+
 .footer-center__text {
     margin-bottom: 23px;
     font-size: 16px;
@@ -607,4 +609,17 @@ a {
 .footer-center__social svg {
     fill: #5E6648;
     transition: all 0.4s;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0 39px;
+    border-top: 1px solid #5D6544;
+}
+
+.footer-bottom__right {
+    font-size: 14px;
+    color: #B5C096;
 }
